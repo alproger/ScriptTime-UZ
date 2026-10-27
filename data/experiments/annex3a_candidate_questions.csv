@@ -1,0 +1,13 @@
+question_id,script,query,as_of,known_at,gold_doc_id
+q_2025_quota,old_latin,2025-yil noyabrida 3a-ilova 3-band bo'yicha yillik qabul kvotasi nechta o'quvchi bo'lgan?,2025-11-26,2026-10-27,annex3a_quota_2025_snapshot
+q_2025_quota,new_latin,2025-yil noyabrida 3a-ilova 3-band böyiça yillik qabul kvotasi neçta öquvçi bölgan?,2025-11-26,2026-10-27,annex3a_quota_2025_snapshot
+q_2025_quota,cyrillic,2025 йил ноябрида 3а-илова 3-банд бўйича йиллик қабул квотаси нечта ўқувчи бўлган?,2025-11-26,2026-10-27,annex3a_quota_2025_snapshot
+q_2026_lower_grades,old_latin,2026-yil 3-iyuldan 1-4-sinflarda 3a-ilova bo'yicha har bir sinfga nechta o'quvchi to'g'ri keladi?,2026-07-03,2026-10-27,annex3a_quota_2026_amended
+q_2026_lower_grades,new_latin,2026-yil 3-iyuldan 1-4-sinflarda 3a-ilova böyiça har bir sinfga neçta öquvçi töğri keladi?,2026-07-03,2026-10-27,annex3a_quota_2026_amended
+q_2026_lower_grades,cyrillic,2026 йил 3 июлдан 1-4-синфларда 3а-илова бўйича ҳар бир синфга нечта ўқувчи тўғри келади?,2026-07-03,2026-10-27,annex3a_quota_2026_amended
+q_2026_upper_grades,old_latin,2026-yil sentabrda 5-11-sinflarda 3a-ilova bo'yicha ikkita sinfning har birida necha o'quvchi qabul qilinadi?,2026-09-01,2026-10-27,annex3a_quota_2026_amended
+q_2026_upper_grades,new_latin,2026-yil sentabrda 5-11-sinflarda 3a-ilova böyiça ikkita sinfning har birida neça öquvçi qabul qilinadi?,2026-09-01,2026-10-27,annex3a_quota_2026_amended
+q_2026_upper_grades,cyrillic,2026 йил сентябрда 5-11-синфларда 3а-илова бўйича иккита синфнинг ҳар бирида неча ўқувчи қабул қилинади?,2026-09-01,2026-10-27,annex3a_quota_2026_amended
+q_2026_boundary,old_latin,2026-yil 2-iyul kuni 3a-ilovaning 3-bandida jami 48 o'quvchilik qaysi kvota nazarda tutilgan?,2026-07-02,2026-10-27,annex3a_quota_2025_snapshot
+q_2026_boundary,new_latin,2026-yil 2-iyul kuni 3a-ilovaning 3-bandida jami 48 öquvçilik qaysi kvota nazarda tutilgan?,2026-07-02,2026-10-27,annex3a_quota_2025_snapshot
+q_2026_boundary,cyrillic,2026 йил 2 июл куни 3а-илованинг 3-бандида жами 48 ўқувчилик қайси квота назарда тутилган?,2026-07-02,2026-10-27,annex3a_quota_2025_snapshot
