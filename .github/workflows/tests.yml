@@ -19,3 +19,4 @@ jobs:
       - run: python -m scripttime evaluate --case annex3a
       - run: python -m scripttime evaluate --case mixed_temporal
       - run: python -m scripttime.review
+      - run: python -m scripttime evaluate --case intent_boundary

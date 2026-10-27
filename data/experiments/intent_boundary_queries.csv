@@ -1,0 +1,7 @@
+question_id,script,query,as_of,known_at,gold_doc_id,evidence_mode
+published_1184,old_latin,O'RQ-1184 yangi o'zbek alifbosi qonuni 28 harf qachon kuchga kiradi?,2026-10-27,2026-10-27,alphabet_new,published_document
+published_1184,new_latin,O'RQ-1184 yangi özbek alifbosi qonuni 28 harf qaçon kuçga kiradi?,2026-10-27,2026-10-27,alphabet_new,published_document
+published_1184,cyrillic,ЎРҚ-1184 янги ўзбек алифбоси қонуни 28 ҳарф қачон кучга киради?,2026-10-27,2026-10-27,alphabet_new,published_document
+operative_oct26,old_latin,2026-yil 27-oktabrda o'zbek alifbosining eski amaldagi qoidasi qaysi?,2026-10-27,2026-10-27,alphabet_old,operative_rule
+operative_oct26,new_latin,2026-yil 27-oktabrda özbek alifbosining eski amaldagi qoidasi qaysi?,2026-10-27,2026-10-27,alphabet_old,operative_rule
+operative_oct26,cyrillic,2026 йил 27 октябрда ўзбек алифбосининг эски амалдаги қоидаси қайси?,2026-10-27,2026-10-27,alphabet_old,operative_rule

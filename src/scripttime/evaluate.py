@@ -26,10 +26,12 @@ def evaluate(docs, questions, methods=METHODS):
     rows = []
     for q in questions:
         for method in methods:
-            predicted = rank(q['query'], docs, method, as_of=q['as_of'], known_at=q['known_at'], k=3)
+            predicted = rank(q['query'], docs, method, as_of=q['as_of'], known_at=q['known_at'],
+                             evidence_mode=q.get('evidence_mode') or 'operative_rule', k=3)
             ids = [doc.doc_id for doc, _ in predicted]
             gold = q['gold_doc_id']
             rows.append(dict(method=method, question_id=q['question_id'], script=q['script'],
+                evidence_mode=q.get('evidence_mode') or 'operative_rule',
                 gold=gold, top1=ids[0] if ids else "",
                 hit1=int(bool(ids) and ids[0] == gold),
                 recall3=int(gold in ids),
