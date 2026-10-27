@@ -10,6 +10,9 @@ DATASETS = {
     "seed": ("data/seed/documents.jsonl", "data/seed/queries.csv"),
     "annex3a": ("data/experiments/annex3a_versions.jsonl", "data/experiments/annex3a_candidate_questions.csv"),
 }
+# Backward-compatible paths for original test modules.
+DOCS = ROOT / DATASETS["seed"][0]
+QUERIES = ROOT / DATASETS["seed"][1]
 METHODS = ("bm25", "bm25_norm", "char3_norm", "bm25_time", "bm25_norm_time")
 
 
