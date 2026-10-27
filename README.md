@@ -56,3 +56,29 @@ python -m scripttime query "2027-yil aprelida yangi alifbo" --as-of 2027-04-23 -
 Research prototype by **Yakhyokhon Kodirov**, [ORCID 0009-0003-5930-8827](https://orcid.org/0009-0003-5930-8827). Independent research; not affiliated with LexUZ and not an official government information service.
 
 **Caution:** GitHub publication is not conference acceptance. The paper under `paper/` is a draft that must not be submitted until independently verified evidence and results exist.
+
+
+## Temporal intent correction (2026-10-27)
+
+A law may be **published now but not yet legally in force**. Two different information requests must not use the same filter:
+
+| Request intent | Metadata condition | Example |
+| --- | --- | --- |
+| `published_document` | `available_from <= known_at` | When will the October 2026 alphabet amendment enter into force? |
+| `operative_rule` | `available_from <= known_at` AND `valid_from <= as_of < valid_to` | Which alphabet rule was operative in October 2026? |
+
+This is a baseline **rule-based query-intent parameter**, not a trained classifier. All lexical baselines now respect the same `known_at` availability cutoff when provided. No-positive-match lexical rankings abstain instead of returning arbitrary zero-score evidence; this is **not calibrated confidence**.
+
+```bash
+python -m scripttime query "O'RQ-1184 28 harf" --method bm25_norm_time --case seed --as-of 2026-10-27 --known-at 2026-10-27 --evidence-mode published_document
+python -m scripttime query "amaldagi o'zbek alifbosi" --method bm25_norm_time --case seed --as-of 2026-10-27 --known-at 2026-10-27 --evidence-mode operative_rule
+python -m scripttime evaluate --case intent_boundary
+```
+
+Our new `src/scripttime/analysis.py` offers **question-group paired bootstrap diagnostics**. All related script variants stay together; the current small author-prepared samples are still **not a publishable inference dataset**.
+
+See:
+- [Temporal intent design](docs/TEMPORAL_INTENT_DESIGN.md)
+- [Factorial experiment design and statistical risks](docs/EXPERIMENT_DESIGN_FACTORS.md)
+- [Source and research audit, 27 October 2026](docs/RESEARCH_AUDIT_2026-10-27.md)
+- [Human-review question pool and issues](docs/REVIEW_GUIDE_UZ.md)
