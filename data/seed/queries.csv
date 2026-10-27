@@ -1,0 +1,10 @@
+question_id,script,query,as_of,known_at,gold_doc_id
+q01,old_latin,2026-yil oktabrida o'zbek alifbosi nechta harfdan iborat?,2026-10-27,2026-10-27,alphabet_old
+q01,new_latin,2026-yil oktabrida özbek alifbosi neçta harfdan iborat?,2026-10-27,2026-10-27,alphabet_old
+q01,cyrillic,2026 йил октябрида ўзбек алифбоси нечта ҳарфдан иборат?,2026-10-27,2026-10-27,alphabet_old
+q02,old_latin,2027-yil aprel oxirida o'zbek alifbosi 28 harf bo'ladimi?,2027-04-23,2026-10-27,alphabet_new
+q02,new_latin,2027-yil aprel oxirida özbek alifbosi 28 harf böladimi?,2027-04-23,2026-10-27,alphabet_new
+q02,cyrillic,2027 йил апрел охирида ўзбек алифбоси 28 ҳарф бўладими?,2027-04-23,2026-10-27,alphabet_new
+q03,old_latin,Prezident maktabiga qabul tartibi qaysi qarorda?,2026-10-27,2026-10-27,admissions_214
+q03,new_latin,Prezident maktabiga qabul tartibi qaysi qarorda?,2026-10-27,2026-10-27,admissions_214
+q03,cyrillic,Президент мактабига қабул тартиби қайси қарорда?,2026-10-27,2026-10-27,admissions_214

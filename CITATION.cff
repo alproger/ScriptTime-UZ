@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite this repository while a formal peer-reviewed publication is unavailable."
+title: "ScriptTime-UZ: Uzbek orthographic and temporal retrieval research prototype"
+type: software
+authors:
+  - family-names: Kodirov
+    given-names: Yakhyokhon
+version: 0.1.0
+date-released: 2026-10-27
