@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATASETS = {
     "seed": ("data/seed/documents.jsonl", "data/seed/queries.csv"),
     "annex3a": ("data/experiments/annex3a_versions.jsonl", "data/experiments/annex3a_candidate_questions.csv"),
+    "mixed_temporal": ("data/experiments/mixed_temporal_records.jsonl", "data/experiments/mixed_temporal_queries.csv"),
 }
 # Backward-compatible paths for original test modules.
 DOCS = ROOT / DATASETS["seed"][0]
