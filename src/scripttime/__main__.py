@@ -51,6 +51,7 @@ def main():
     q.add_argument("--as-of", default="2026-10-27")
     q.add_argument("--known-at", default="2026-10-27")
     q.add_argument("--case", choices=DATASETS, default="seed")
+    q.add_argument("--evidence-mode", choices=["operative_rule", "published_document"], default="operative_rule")
     e = sub.add_parser("evaluate")
     e.add_argument("--case", choices=DATASETS, default="seed")
     args = parser.parse_args()
@@ -62,7 +63,8 @@ def main():
     docs_path, query_path = DATASETS[args.case]
     docs, _ = load_data(ROOT / docs_path, ROOT / query_path)
     for record, score in rank(
-        args.text, docs, args.method, as_of=args.as_of, known_at=args.known_at
+        args.text, docs, args.method, as_of=args.as_of, known_at=args.known_at,
+        evidence_mode=args.evidence_mode
     ):
         print(f"{score:.4f}\t{record.doc_id}\t{record.title}\n  {record.source_url}")
 
