@@ -119,6 +119,6 @@ class AdversarialPropertiesTests(unittest.TestCase):
             if r["method"] in {"bm25_time","bm25_norm_time"}:
                 self.assertEqual(r["invalid_top1"],0)
 
-    def test_date_filter_does_not_claim_triviality_was_solved(self):
+    def test_challenge_date_filter_keeps_nontrivial_candidate_sets(self):
         detail=candidate_difficulty(self.docs,self.queries)
-        self.assertTrue(any(r["is_single_candidate"] for r in detail))
+        self.assertTrue(all(r["eligible_documents"]>=2 for r in detail))
