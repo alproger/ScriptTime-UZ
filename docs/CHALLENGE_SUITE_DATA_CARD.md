@@ -5,7 +5,7 @@
 ## Why this exists
 - Tests exact day-before/day-of transition boundaries (labor 2023-04-30; water 2025-10-31; Annex 3a quota 2026-07-03; alphabet 2027-04-22).
 - Distinguishes questions about a **published future document** from a **currently operative provision**.
-- Contains **six** deliberately unanswerable query templates (no exact eligible evidence in this **finite** toy corpus), requiring abstention rather than substituting another document.
+- Contains **seven** deliberately unanswerable query templates (no exact eligible evidence in this **finite** toy corpus), requiring abstention rather than substituting another document.
 - Adds source-linked same-time distractors: 214 Annex 3 committee paragraphs 7 and 8; law 1184 Articles 2 and 4. These are paraphrases, not full legal text.
 - Includes Cyrillic and algorithmically converted revised Latin variants. Revised Latin variants are *not linguistically human-verified*.
 - Removes **post-2023/2025/2026 hindsight statements** from records incorrectly presented as historically available old sources.
