@@ -82,3 +82,25 @@ See:
 - [Factorial experiment design and statistical risks](docs/EXPERIMENT_DESIGN_FACTORS.md)
 - [Source and research audit, 27 October 2026](docs/RESEARCH_AUDIT_2026-10-27.md)
 - [Human-review question pool and issues](docs/REVIEW_GUIDE_UZ.md)
+
+## Expanded adversarial development checks — 2026-10-29
+
+The earlier 9-paraphrase/24-variant demo remains reproducible. The new
+`challenge` scenario holds 13 source-linked paraphrases, 24 base-question
+**templates**, and 72 correlated old-Latin/new-Latin/Cyrillic variants. Seven
+question groups explicitly request abstention when this tiny corpus cannot
+provide a correctly eligible passage. Do not count 72 variants as 72 independent
+questions or 92 software unit tests as 92 empirical test questions.
+
+```bash
+python -m pip install -e .
+python -m unittest discover -s tests -v
+python -m scripttime evaluate --case challenge
+python -m scripttime.audit
+```
+
+The audit reports candidate-set size, false answers on abstention questions,
+temporal-invalid top-1 results, group-aware paired diagnostics, and breakdowns
+by retrieval intent and writing system. **All challenge questions and new-Latin
+variants are developer-prepared and await independent review**. This is not a
+valid held-out benchmark; see [the data card](docs/CHALLENGE_SUITE_DATA_CARD.md).

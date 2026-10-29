@@ -20,3 +20,5 @@ jobs:
       - run: python -m scripttime evaluate --case mixed_temporal
       - run: python -m scripttime.review
       - run: python -m scripttime evaluate --case intent_boundary
+      - run: python -m scripttime evaluate --case challenge
+      - run: python -m scripttime.audit
